@@ -1,6 +1,7 @@
 const defaultConfig = require('./default')
 
 let config = Object.assign(defaultConfig, require('./' + (process.env.CODE_ENV || 'local')))
+console.log(888888, config)
 
 ;['VIEW_PATH', 'ADMIN_PATH', 'EDITOR_PATH', 'API_PATH'].map(k => {
   if (config[k] === '/') return

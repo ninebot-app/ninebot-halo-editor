@@ -1,5 +1,5 @@
 <template>
-  <div class="node" v-show="visible" :class="{active:isActive}" :style="computedStyle">
+  <div class="node drakbg" v-show="visible" :class="{active:isActive}" :style="computedStyle">
     <component :is="currPage" v-bind="nodeInfo.props" :ref="nodeInfo.id">
       <template slot="ListContainer" v-if="isListContainer" slot-scope="listCell">
         <prenode :info="nodeChild[0]" :scope="listCell"></prenode>
@@ -17,6 +17,9 @@
   </div>
 </template>
 <style lang="stylus" rel="stylesheet/stylus" scoped type="text/stylus">
+  .drakbg {
+    background: #fff
+  }
   .node {
     position: relative;
     font-size 16px;
@@ -26,6 +29,11 @@
       overflow: hidden;
       height: 0;
       width: 1px;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    .drakbg {
+      background: #000 !important
     }
   }
 </style>
