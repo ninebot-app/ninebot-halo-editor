@@ -1,5 +1,5 @@
 <template>
-  <div class="node drakbg" v-show="visible"
+  <div class="node" v-show="visible"
     @dragenter='dragenter($event)' @dragover="dragover($event)" @drop="drop($event)" @dragleave='dragleave($event)'
     @click.stop='actived' @contextmenu.prevent.stop="showContextMenu(nodeInfo,$event)"
     :class="{active:isActive, dragentered:dragentered}"
