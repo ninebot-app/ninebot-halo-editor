@@ -82,6 +82,12 @@
       background-color:#f5f5f5;
     }
 
+    @media (prefers-color-scheme: dark) {
+      html.is-desktop.for-mobile .app-fixed>.app {
+        background-color: #000 !important
+      }
+    }
+
     html.is-desktop.for-mobile body>.desktop-bg {
       position: absolute;
       left: 0;

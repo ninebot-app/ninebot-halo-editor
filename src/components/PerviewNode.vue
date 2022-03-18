@@ -1,5 +1,5 @@
 <template>
-  <div class="node drakbg" v-show="visible" :class="{active:isActive}" :style="computedStyle">
+  <div class="node" v-show="visible" :class="{active:isActive}" :style="computedStyle">
     <component :is="currPage" v-bind="nodeInfo.props" :ref="nodeInfo.id">
       <template slot="ListContainer" v-if="isListContainer" slot-scope="listCell">
         <prenode :info="nodeChild[0]" :scope="listCell"></prenode>
