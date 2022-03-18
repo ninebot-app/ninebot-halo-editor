@@ -162,13 +162,6 @@
       }
     }
   }
-  @media (prefers-color-scheme: dark) {
-    .appWarp.dont-override {
-      .app {
-        background: #000
-      }
-    }
-  }
 </style>
 <script>
   import Node from '../Node'

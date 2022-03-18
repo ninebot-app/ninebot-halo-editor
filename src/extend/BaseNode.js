@@ -46,11 +46,8 @@ export default {
       return this.nodeInfo.id === 'root' || this.nodeInfo.type === 'node' || this.$parent.$options.name === 'widgetScene'
     },
     computedStyle () {
-      console.log(33333, this.nodeInfo.style)
-      this.nodeInfo.style.background = 'transparent !important'
       const sortedStyle = styleParser(this.nodeInfo.style)
       const slotStyle = typeof this.slotStyle === 'object' && this.slotStyle ? this.slotStyle : {}
-      console.log(33333, this.nodeInfo.style, Object.assign({ 'pointer-events': this.packedChild ? 'none' : 'auto' }, sortedStyle, slotStyle))
       return Object.assign({ 'pointer-events': this.packedChild ? 'none' : 'auto' }, sortedStyle, slotStyle)
     },
     parentNodeVm () {
