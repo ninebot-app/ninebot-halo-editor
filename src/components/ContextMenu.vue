@@ -26,6 +26,10 @@
       <i class="iconfont icon-import"></i>
       导入节点
     </a>
+    <a class="item" @click="itemClick('refreshJson')">
+      <i class="iconfont icon-refresh"></i>
+      更新节点
+    </a>
     <template v-if='node && !isRootNode'>
     <a class="item" @click="itemClick('combinedNode')">
       <i class="iconfont icon-import"></i>
@@ -231,6 +235,29 @@
           methods: {
           }
         })
+      },
+      refreshJson: function () {
+        const componentInfos = JSON.parse(sessionStorage.getItem('componentInfos'))
+        console.log(777723, this.node.nodeInfo, componentInfos)
+        // const newArr = []
+        const newArr = this.node.nodeInfo.child.map(item => {
+          console.log(877773, item)
+          let obj = {}
+          componentInfos.forEach(val => {
+            // console.log(333333, item.id, val.name)
+            if (item.type === val.name) {
+              obj = {
+                ...item,
+                path: val.path,
+                url: val.path,
+                version: val.version
+              }
+            }
+          })
+          return obj
+        })
+        this.node.nodeInfo.child = newArr
+        console.log(666666, newArr)
       },
       combinedNode () {
         if (this.demoMode) return this.$alert('您处在 demo 模式下，不能保存数据哦')

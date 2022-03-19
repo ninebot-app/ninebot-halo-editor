@@ -358,6 +358,7 @@
           }
         }).then(({data}) => {
           this.comLists = data.data && data.data.list || []
+          sessionStorage.setItem('componentInfos', JSON.stringify(this.comLists))
         })
       },
       readme (com) {
