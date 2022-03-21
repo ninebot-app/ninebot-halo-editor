@@ -258,7 +258,7 @@
           return obj
         })
         this.node.nodeInfo.child = newArr
-        console.log(666666, newArr)
+        console.log(777, newArr)
       },
       combinedNode () {
         if (this.demoMode) return this.$alert('您处在 demo 模式下，不能保存数据哦')
