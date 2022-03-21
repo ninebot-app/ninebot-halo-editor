@@ -241,7 +241,6 @@
         const newArr = this.node.nodeInfo.child.map(item => {
           let obj = {}
           componentInfos.forEach(val => {
-            // console.log(333333, item.id, val.name)
             if (item.type === val.name) {
               obj = {
                 ...item,
@@ -249,9 +248,9 @@
                 url: val.path,
                 version: val.version,
                 style: {
-                  ...val.style,
+                  ...item.style,
                   height: 'auto',
-                  left: '0px'
+                  left: item.left === '-1px' ? '0px' : item.style.left
                 }
               }
             }
