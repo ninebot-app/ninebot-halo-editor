@@ -238,10 +238,7 @@
       },
       refreshJson: function () {
         const componentInfos = JSON.parse(sessionStorage.getItem('componentInfos'))
-        console.log(777723, this.node.nodeInfo, componentInfos)
-        // const newArr = []
         const newArr = this.node.nodeInfo.child.map(item => {
-          console.log(877773, item)
           let obj = {}
           componentInfos.forEach(val => {
             // console.log(333333, item.id, val.name)
@@ -250,7 +247,13 @@
                 ...item,
                 path: val.path,
                 url: val.path,
-                version: val.version
+                version: val.version,
+                style: {
+                  ...val.style,
+                  height: 'auto',
+                  left: '0px',
+                  top: '0px'
+                }
               }
             }
           })
