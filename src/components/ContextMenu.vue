@@ -251,8 +251,7 @@
                 style: {
                   ...val.style,
                   height: 'auto',
-                  left: '0px',
-                  top: '0px'
+                  left: '0px'
                 }
               }
             }
