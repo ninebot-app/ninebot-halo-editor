@@ -253,6 +253,10 @@
                   left: item.left === '-1px' ? '0px' : item.style.left
                 }
               }
+              // 针对宫格组件 默认间距
+              if (item.props.div) {
+                obj.props.div = 15
+              }
             }
           })
           return obj
