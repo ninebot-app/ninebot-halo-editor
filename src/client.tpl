@@ -55,7 +55,6 @@
       min-height: unset;
       margin-left: -203px;
       margin-top: -347px;
-      background-image: url(https://maliang.ymm56.com/ymm-maliang/access/ymm_1560236249028.png);
     }
 
     html.is-desktop.for-mobile .app-wrapper>.app-fixed {
@@ -117,6 +116,7 @@
 </div>
 <script>
 if (!navigator.userAgent.match(/mobile|iphone|ipad|android/i) || window.innerWidth >= 768) {
+  console.log(8888888)
   document.documentElement.classList.add('is-desktop')
   window.isDesktop = !0
 } else {
