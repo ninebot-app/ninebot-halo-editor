@@ -55,6 +55,7 @@
       min-height: unset;
       margin-left: -203px;
       margin-top: -347px;
+      background-image: url(https://maliang.ymm56.com/ymm-maliang/access/ymm_1560236249028.png);
     }
 
     html.is-desktop.for-mobile .app-wrapper>.app-fixed {
@@ -110,13 +111,12 @@
 <div id='app-wrapper' class="app-wrapper">
   <div id='app-fixed' class="app-fixed" id='app-fixed'>
     <div id="app" class="app">
-      <img class="loading-img" src="https://cos.56qq.com/fis/20200330161413755aebf4c6d10771a9.gif" alt="">
+      <img class="loading-img" src="https://oss-app-h5.oss-cn-beijing.aliyuncs.com/oss-app-h5/resource/ymm_1648196531835.gif" alt="">
     </div>
   </div>
 </div>
 <script>
 if (!navigator.userAgent.match(/mobile|iphone|ipad|android/i) || window.innerWidth >= 768) {
-  console.log(8888888)
   document.documentElement.classList.add('is-desktop')
   window.isDesktop = !0
 } else {

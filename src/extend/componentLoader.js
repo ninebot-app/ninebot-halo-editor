@@ -26,7 +26,7 @@ export default {
       this.componentCache[C_KEY] = component = component.default || component
       return component
     }).catch(h => {
-      console.log('加载脚本失败', url)
+      console.log('加载脚本失败111', url)
       console.error(h)
     })
   },
@@ -34,6 +34,7 @@ export default {
     if (!path) return
     version = version || '0.1.0'
     let C_KEY = `${type}@${version}editor`
+    console.log(9999, this.componentCache)
     let component = this.componentCache[C_KEY]
     if (component) return component
     let request, url
