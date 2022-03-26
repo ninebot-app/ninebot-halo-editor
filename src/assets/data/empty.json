@@ -1,6 +1,6 @@
 {
     "id": "root",
-    "type": "truck/emptyContainer",
+    "type": "2712/nbfitter",
     "visible": true,
     "style": {
       "background-color": "rgba(255,255,255,1)",
@@ -38,7 +38,7 @@
     "script": [],
     "animate": [],
     "version": "1.0.2",
-    "path": "https://ymm-maliang.oss-cn-hangzhou.aliyuncs.com/truck/emptyContainer/1.0.2/index.js",
+    "path": "https://oss-app-h5.oss-cn-beijing.aliyuncs.com/oss-app-h5/2712/nbfitter/1.0.2/index.js",
     "events": [],
     "label": "root"
   }

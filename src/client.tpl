@@ -55,7 +55,6 @@
       min-height: unset;
       margin-left: -203px;
       margin-top: -347px;
-      background-image: url(https://maliang.ymm56.com/ymm-maliang/access/ymm_1560236249028.png);
     }
 
     html.is-desktop.for-mobile .app-wrapper>.app-fixed {
@@ -89,7 +88,6 @@
       top: 0;
       bottom: 0;
       pointer-events: none;
-      background-image: url(https://maliang.ymm56.com/ymm-maliang/access/ymm_1560236210678.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       display: block;
