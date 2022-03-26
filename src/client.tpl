@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>加载中...22</title>
+  <title>加载中...</title>
   <meta name="viewport" id="viewport"
         content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
   <meta name="renderer" content="webkit"/>
@@ -55,6 +55,7 @@
       min-height: unset;
       margin-left: -203px;
       margin-top: -347px;
+      background-image: url(https://maliang.ymm56.com/ymm-maliang/access/ymm_1560236249028.png);
     }
 
     html.is-desktop.for-mobile .app-wrapper>.app-fixed {
@@ -88,6 +89,7 @@
       top: 0;
       bottom: 0;
       pointer-events: none;
+      background-image: url(https://maliang.ymm56.com/ymm-maliang/access/ymm_1560236210678.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       display: block;
@@ -98,9 +100,18 @@
       left: 50%;
       top: 44%;
       transform: translate(-50%,-50%);
-      width: 20%;
-      max-width: 100px;
+      width: 100vw;
+      max-width: 400px;
       height: auto;
+    }
+    
+    #app {
+      background: #fff !important;
+    }
+    @media (prefers-color-scheme: dark) {
+      #app {
+        background: #000 !important;
+      }
     }
   </style>
 </head>
@@ -109,7 +120,10 @@
 <div id='app-wrapper' class="app-wrapper">
   <div id='app-fixed' class="app-fixed" id='app-fixed'>
     <div id="app" class="app">
-      <img class="loading-img" src="https://oss-app-h5.oss-cn-beijing.aliyuncs.com/oss-app-h5/resource/ymm_1648196531835.gif" alt="">
+      <picture>
+        <source class="loading-img" srcset="https://oss-app-h5.oss-cn-beijing.aliyuncs.com/oss-app-h5/resource/ymm_1648196531835.gif" media="(prefers-color-scheme: dark)"/>
+        <img class="loading-img" src="https://oss-app-h5.oss-cn-beijing.aliyuncs.com/oss-app-h5/resource/ymm_1648282509144.gif" width="100%"/>
+      </picture>
     </div>
   </div>
 </div>
