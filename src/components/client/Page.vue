@@ -27,6 +27,7 @@
     },
     mounted: function () {
       this.loadPageInfo()
+      console.log(999991111119)
     },
     watch: {
       '$route' (to, from) {
