@@ -1,6 +1,6 @@
 {
     "id": "root",
-    "type": "2712/nbfitter",
+    "type": "2712/flex-view",
     "visible": true,
     "style": {
       "background-color": "transparent",
@@ -37,8 +37,8 @@
     }],
     "script": [],
     "animate": [],
-    "version": "1.0.2",
-    "path": "https://oss-app-h5.oss-cn-beijing.aliyuncs.com/oss-app-h5/2712/nbfitter/1.0.2/index.js",
+    "version": "1.0.1",
+    "path": "https://oss-app-h5.oss-cn-beijing.aliyuncs.com/oss-app-h5/2712/flex-view/1.0.1/index.js",
     "events": [],
     "label": "root"
   }
