@@ -8,7 +8,7 @@ switch (process.env.PAGE) {
     page = {
       entry: 'src/client.js',
       template: 'src/client.tpl',
-      outputDir: `dist/${config.VIEW_NAME || 'view'}`,
+      outputDir: `dist/${config.VIEW_NAME || 'v'}`,
       publicPath: '/' + config.VIEW_NAME,
       port: 8566,
     }

@@ -12,7 +12,7 @@ console.log(888888, config)
   }
 })
 
-config.VIEW_NAME = process.env.NODE_ENV === 'development' ? '' : (config.VIEW_PATH.match(/([^/]+)\/?$/) || ['', 'view'])[1]
+config.VIEW_NAME = process.env.NODE_ENV === 'development' ? '' : (config.VIEW_PATH.match(/([^/]+)\/?$/) || ['', 'v'])[1]
 config.EDITOR_NAME = process.env.NODE_ENV === 'development' ? '' : (config.EDITOR_PATH.match(/([^/]+)\/?$/) || ['', 'editor'])[1]
 
 module.exports = config
