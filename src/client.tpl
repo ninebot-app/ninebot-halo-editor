@@ -101,8 +101,9 @@
       top: 44%;
       transform: translate(-50%,-50%);
       width: 100vw;
-      max-width: 400px;
+      max-width: 240px;
       height: auto;
+      z-index: 9999
     }
     
     #app {
