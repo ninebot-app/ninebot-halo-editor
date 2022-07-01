@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>加载中...</title>
+  <meta name="color-scheme" content="light dark">
   <meta name="viewport" id="viewport"
         content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
   <meta name="renderer" content="webkit"/>
