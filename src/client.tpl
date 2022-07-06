@@ -31,7 +31,7 @@
     }
 
     html.for-mobile body {
-      background-color: #f5f5f5;
+      background-color: transparent;
     }
     html.for-mobile body .app {
       overflow-x: hidden;
@@ -65,7 +65,7 @@
       position: absolute;
       left: 43px;
       top: 60px;
-      background-color: #f5f5f5;
+      background-color: transparent;
       overflow: hidden;
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
@@ -80,7 +80,7 @@
       position: absolute;
       left: 0px;
       top: 0px;
-      background-color:#f5f5f5;
+      background-color: transparent;
     }
 
     html.is-desktop.for-mobile body>.desktop-bg {
