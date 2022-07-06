@@ -15,7 +15,8 @@
     html,
     body {
       padding: 0;
-      margin: 0
+      margin: 0;
+      min-height: 100vh;
     }
     html body>.desktop-bg,
     html body>.app-wrapper {
@@ -31,7 +32,7 @@
     }
 
     html.for-mobile body {
-      background-color: transparent;
+      background-color: #fff;
     }
     html.for-mobile body .app {
       overflow-x: hidden;
@@ -65,7 +66,7 @@
       position: absolute;
       left: 43px;
       top: 60px;
-      background-color: transparent;
+      background-color: #fff;
       overflow: hidden;
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
@@ -80,7 +81,7 @@
       position: absolute;
       left: 0px;
       top: 0px;
-      background-color: transparent;
+      background-color:#fff;
     }
 
     html.is-desktop.for-mobile body>.desktop-bg {
@@ -113,6 +114,15 @@
     @media (prefers-color-scheme: dark) {
       #app {
         background: #000 !important;
+      }
+      html.for-mobile body {
+        background-color: #000 !important;
+      }
+      html.is-desktop.for-mobile .app-fixed>.app {
+        background-color: #000 !important;
+      }
+      html.is-desktop.for-mobile .app-wrapper>.app-fixed {
+        background-color: #000 !important;
       }
     }
   </style>
