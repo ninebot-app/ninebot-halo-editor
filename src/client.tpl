@@ -107,24 +107,6 @@
       height: auto;
       z-index: 9999
     }
-    
-    #app {
-      background: #fff !important;
-    }
-    @media (prefers-color-scheme: dark) {
-      #app {
-        background: #000 !important;
-      }
-      html.for-mobile body {
-        background-color: #000 !important;
-      }
-      html.is-desktop.for-mobile .app-fixed>.app {
-        background-color: #000 !important;
-      }
-      html.is-desktop.for-mobile .app-wrapper>.app-fixed {
-        background-color: #000 !important;
-      }
-    }
   </style>
 </head>
 <body>

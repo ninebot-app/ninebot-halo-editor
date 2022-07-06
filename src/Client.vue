@@ -1,5 +1,5 @@
 <template>
-  <div class="app" id="app">
+  <div class="app" id="app" v-show="isShow">
     <keep-alive>
       <router-view></router-view>
     </keep-alive>
@@ -22,10 +22,14 @@
     components: {Toast, Loading, ImgViewer},
     data: function () {
       return {
+        isShow: false
       }
     },
     store: vuexStore,
     created: function () {
+      setTimeout(() => {
+        this.isShow = true
+      }, 200)
       window.msgBox = MessageBox // http://qastatic.ymm56.com/mint-ui-docs/#!/zh-cn2/message-box
       window.alert = function (msg, fn) {
         MessageBox.close()
@@ -84,7 +88,7 @@
       window.viewImg = (imgs, index) => {
         this.$refs.imgViewer.open(imgs, index)
       }
-      console.log('app mounted')
+      console.log('app mounted v1.0.1')
     },
     mounted: function () {
     },
@@ -115,5 +119,24 @@
     width: 100%;
     height: 100%;
     -webkit-overflow-scrolling: touch;
+  }
+
+  #app {
+    background: #fff;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    #app {
+      background: #000 !important;
+    }
+    html.for-mobile body {
+      background-color: #000 !important;
+    }
+    html.is-desktop.for-mobile .app-fixed>.app {
+      background-color: #000 !important;
+    }
+    html.is-desktop.for-mobile .app-wrapper>.app-fixed {
+      background-color: #000 !important;
+    }
   }
 </style>
