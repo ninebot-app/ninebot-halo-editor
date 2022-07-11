@@ -7,10 +7,12 @@ run/
 .DS_Store
 *.swp
 .vscode/
+config/config.dev.js
 config/config.docker.js
-.travis.yml
-appveyor.yml
+.git
+dist/
+sub/**/node_modules/
+sub/**/dist/
 config.yaml
 config/config.dev.js.bak
 config/config.local.js
-memo.md
