@@ -10,16 +10,16 @@ module.exports = {
     dialect: 'mysql',
     port: '3306',
     database: 'godspen_db',
-    host: '10.10.36.112',
-    username: 'develop',
-    password: 'ninebot'
+    host: '',
+    username: '',
+    password: ''
   },
   oss: {
-    accessKeyId: 'LTAI5tMziKJFMP8EHNSd1Q8R',
-    accessKeySecret: 'e9wdRPTFa1n8Hs0boGh6pviCokwSM8',
-    host: 'https://oss-app-h5.oss-cn-beijing.aliyuncs.com', // eg. https://xxxxxx.oss-cn-hangzhou.aliyuncs.com'
-    bucket:'oss-app-h5',
-    region: 'oss-cn-beijing' // eg. oss-cn-hangzhou
+    accessKeyId: '',
+    accessKeySecret: '',
+    host: '', // eg. https://xxxxxx.oss-cn-hangzhou.aliyuncs.com'
+    bucket:'',
+    region: '' // eg. oss-cn-hangzhou
   },
   es: {
     index: 'godspen',
@@ -28,7 +28,7 @@ module.exports = {
   },
   // redis 单节点
   redis: {
-    host: '10.10.36.112',
+    host: '',
     port: 6379
   },
   // redis 集群
@@ -38,11 +38,11 @@ module.exports = {
   //   {host: '', port: 6390},
   // ],
   mail: {
-    host: 'smtp.qiye.163.com',
+    host: '',
     port: 465,
     secure: true, // 端口号为465时，请设置为true
-    user: 'app@ninebot.com',
-    pass: 'XmM5iQ8kcy}ybcP0',
+    user: 'xxx@xx.com',
+    pass: '',
   },
   ADMIN_PATH: '/' // 开发环境下的一级路径，也可以为全路径 http://127.0.0.1:8567/
 }
