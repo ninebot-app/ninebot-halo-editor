@@ -5,6 +5,7 @@
 .idea/
 node_modules/
 dist/
+run/
 npm-debug.log
 npm-debug.log.*
 selenium-debug.log
@@ -15,3 +16,5 @@ ymm_build/
 yarn-error.log
 distzip/
 verify.md
+.travis.yml
+appveyor.yml
