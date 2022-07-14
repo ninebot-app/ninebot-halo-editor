@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>加载中...</title>
+  <title>加载中...</title> 
   <meta name="color-scheme" content="light dark">
   <meta name="viewport" id="viewport"
         content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
@@ -16,7 +16,6 @@
     body {
       padding: 0;
       margin: 0;
-      min-height: 100vh;
     }
     html body>.desktop-bg,
     html body>.app-wrapper {
